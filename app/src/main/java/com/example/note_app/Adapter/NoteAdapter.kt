@@ -19,7 +19,7 @@ class NoteAdapter(var activity: MainActivity2, var data:ArrayList<Note>) : BaseA
     }
 
     override fun getItemId(position: Int): Long {
-        return data[position].id.toLong()
+        return position.toLong()
     }
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
