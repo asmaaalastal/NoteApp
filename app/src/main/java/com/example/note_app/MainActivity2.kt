@@ -26,7 +26,8 @@ class MainActivity2 : AppCompatActivity() {
                         Note(
                             document.getString("name").toString(),
                             document.getString("description").toString(),
-                            document.getString("note_letters").toString()
+//                            document.getLong("note_letters")?.toInt()
+                            document.getString("word_letters").toString(),
                         )
                     )
                     noteAdapter.notifyDataSetChanged()

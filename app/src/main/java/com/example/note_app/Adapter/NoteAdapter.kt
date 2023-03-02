@@ -26,7 +26,7 @@ class NoteAdapter(var activity: MainActivity2, var data:ArrayList<Note>) : BaseA
         val root = LayoutInflater.from(activity).inflate(R.layout.lvnote_card,null,false)
         root.noteName.text = data[position].name
         root.noteDescription.text = data[position].description
-        root.noteLetters.text = data[position].word_letters.toString()
+        root.wordLetters.text = data[position].word_letters
         return root
     }
 
